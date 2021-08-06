@@ -6,5 +6,5 @@ setup(
     name='pancreas',
     version='0.1',
     packages=['pancreas'],
-    url='https://github.com/trombulina/pancreas'
+    url='https://github.com/trombulina/pancreas/pancreas/'
 )
