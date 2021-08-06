@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 
-def test(a,b)
+def test(a,b):
     return a+b
     
 def calc_marker_impact(marker_name, data, q = 10):
