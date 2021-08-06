@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 
 def test(a,b):
-    return a+b
+    return a+b+2
     
 def calc_marker_impact(marker_name, data, q = 10):
     data['quantile'] = pd.qcut(data[marker_name],q)
