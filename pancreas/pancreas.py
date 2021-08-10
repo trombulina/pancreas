@@ -4,6 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 
+def test2:
+    return 1 
+    
 def test(a,b):
     return a+b+2
     
