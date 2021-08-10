@@ -30,4 +30,19 @@ def draw_lineplot(y,labels,col,fig, title):
     ax.plot(x, y, marker='o', markerfacecolor=col ,markersize=12, color=col, linewidth=4)
     plt.title(title)
     
+#Let's create a function to easily draw scatterplots on this data
+def plot_scatterplot(var1,var2,data):
+    x = data[var1]
+    y = data[var2]
+    col = [1 if d==3 else 0 for d in data['diagnosis']]
+    plt.title('Cancer diagnosis status')
+    plt.scatter(x,y, c= col)
+    plt.colorbar()
+    axes = plt.gca()
+    axes.set_ylim([x.quantile(0.05),x.quantile(0.95)])
+    axes.set_xlim([y.quantile(0.05),y.quantile(0.95)])
+    plt.xlabel(var1)
+    plt.ylabel(var2)
+    plt.show()
+    
 colors = cm.rainbow(np.linspace(0, 2, 10))
