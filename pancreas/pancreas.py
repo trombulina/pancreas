@@ -43,8 +43,6 @@ def plot_scatterplot(var1,var2,data):
     plt.xlabel(var1)
     plt.ylabel(var2)
     plt.show()
-    
-def test(a,b,c):
-    return a*b*c
-    
+
+
 colors = cm.rainbow(np.linspace(0, 2, 10))
